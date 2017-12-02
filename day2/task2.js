@@ -4,6 +4,7 @@ var lineReader = require('readline').createInterface({
   input: require('fs').createReadStream('input.txt')
 });
 
+// linereader idea from https://stackoverflow.com/questions/6156501/read-a-file-one-line-at-a-time-in-node-js
 lineReader.on('line', function (line) {
   var row = line.split('\t');
   for (var i = 0; i < row.length-1; i++) {

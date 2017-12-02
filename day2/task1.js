@@ -1,5 +1,6 @@
 var result = 0;
 
+// linereader idea from https://stackoverflow.com/questions/6156501/read-a-file-one-line-at-a-time-in-node-js
 var lineReader = require('readline').createInterface({
   input: require('fs').createReadStream('input.txt')
 });
