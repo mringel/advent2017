@@ -10,9 +10,9 @@ function isAnagram(word1, word2) {
   var word1 = word1.split('');
   var word2 = word2.split('');
   for (var i = 0; i < word1.length; i++) {
-    if (word1[i] != word2[i]) { return false}
+    if (word1[i] != word2[i]) { return false;}
   }
-  return true
+  return true;
 }
 
 function checkRow(row) {
